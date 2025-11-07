@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Bill"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_acc_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account no: "
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_dialog_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#000000" />
+
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_label_billno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bill number : "
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_bill_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bill Number "
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_bill_date_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date covered from: "
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/et_period_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint=""
+            android:textAlignment="textEnd"
+            android:textSize="14sp" />
+        <!--            android:hint="Date covered from"-->
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_date_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date covered to: "
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_period_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint=""
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+            <!--                android:hint="Date covered to"-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due date: "
+                android:textSize="14sp"
+                />
+            <EditText
+                android:id="@+id/et_due_date"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+<!--                android:hint="Due date"-->
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_meter_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meter number: "
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_bill_meter_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:maxLength="25"
+                android:inputType="number"
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_meter_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current reading: "
+                android:textSize="14sp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_current_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="25"
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_lbl_prev_reading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous reading: "
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_show_prev_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="number"
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_consumption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current consumption: "
+                android:textSize="14sp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_consumption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="25"
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_other_consume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other consumption: "
+                android:textSize="14sp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_other_consume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="25"
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+            <!--                android:hint="Other consumption"-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_label_total_consume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Consumption: "
+                android:textSize="14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_total_consume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textAlignment="textEnd"/>
+            <!--                android:hint="Total Consumption: "-->
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_maintenance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meter Maintenance Fee: "
+                android:textSize="14sp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_meter_maintenance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:maxLength="25"
+                android:digits="0123456789."
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+            <!--      android:hint="Meter Maintenance Fee"-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_curr_due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Due: "
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_current_due"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:maxLength="25"
+                android:digits="0123456789."
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+            <!--                android:hint="Current Due:"-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_total_due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount Due: "
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_total_amount_due"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+            <!--                android:hint="Total Amount Due"-->
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_penalty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penalty after due date: "
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_penalty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:maxLength="25"
+                android:textAlignment="textEnd"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:textSize="14sp" />
+<!--                android:hint="Penalty After Due Date"-->
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bill_label_after_due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total amount after due: "
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_after_due"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColor="@color/black"
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+            <!--     android:hint="Total Amount After Due Date: "-->
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

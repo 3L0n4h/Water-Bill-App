@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "774391061838",
+    "firebase_url": "https://waterbillapp-72679.firebaseio.com",
+    "project_id": "waterbillapp-72679",
+    "storage_bucket": "waterbillapp-72679.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774391061838:android:cf8867ea679ad92a3f921f",
+        "android_client_info": {
+          "package_name": "com.example.bilingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774391061838-72356rk2g42bb2567iif0esgk7r5dmot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP6R0o6XF4ze4EZ6dEA5Dd3DrysPk7u5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774391061838-72356rk2g42bb2567iif0esgk7r5dmot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
